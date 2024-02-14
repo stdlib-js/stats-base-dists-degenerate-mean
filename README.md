@@ -69,6 +69,11 @@ where `μ` is the constant value of the distribution.
 ## Usage
 
 ```javascript
+import mean from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dists-degenerate-mean@esm/index.mjs';
+```
+The previous example will load the latest bundled code from the esm branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/stats-base-dists-degenerate-mean/tags). For example,
+
+```javascript
 import mean from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dists-degenerate-mean@v0.2.0-esm/index.mjs';
 ```
 
@@ -111,7 +116,7 @@ v = mean( -0.5 );
 <script type="module">
 
 import randu from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@esm/index.mjs';
-import mean from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dists-degenerate-mean@v0.2.0-esm/index.mjs';
+import mean from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dists-degenerate-mean@esm/index.mjs';
 
 var mu;
 var v;
