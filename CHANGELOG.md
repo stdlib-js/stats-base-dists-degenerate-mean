@@ -2,6 +2,63 @@
 
 > Package changelog.
 
+<section class="release" id="unreleased">
+
+## Unreleased (2025-01-11)
+
+<section class="features">
+
+### Features
+
+-   [`645652a`](https://github.com/stdlib-js/stdlib/commit/645652a48d327b846509cb6221074a3a0038563c) - add c implementation of `stats/base/dists/degenerate/mean` [(#4533)](https://github.com/stdlib-js/stdlib/pull/4533)
+
+</section>
+
+<!-- /.features -->
+
+<section class="issues">
+
+### Closed Issues
+
+This release closes the following issue:
+
+[#3540](https://github.com/stdlib-js/stdlib/issues/3540)
+
+</section>
+
+<!-- /.issues -->
+
+<section class="commits">
+
+### Commits
+
+<details>
+
+-   [`645652a`](https://github.com/stdlib-js/stdlib/commit/645652a48d327b846509cb6221074a3a0038563c) - **feat:** add c implementation of `stats/base/dists/degenerate/mean` [(#4533)](https://github.com/stdlib-js/stdlib/pull/4533) _(by Vinit Pandit, stdlib-bot, Philipp Burckhardt)_
+
+</details>
+
+</section>
+
+<!-- /.commits -->
+
+<section class="contributors">
+
+### Contributors
+
+A total of 2 people contributed to this release. Thank you to the following contributors:
+
+-   Philipp Burckhardt
+-   Vinit Pandit
+
+</section>
+
+<!-- /.contributors -->
+
+</section>
+
+<!-- /.release -->
+
 <section class="release" id="v0.2.2">
 
 ## 0.2.2 (2024-07-26)
