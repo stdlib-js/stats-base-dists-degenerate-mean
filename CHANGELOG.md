@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-05-30)
+## Unreleased (2025-06-20)
 
 <section class="features">
 
@@ -15,6 +15,16 @@
 </section>
 
 <!-- /.features -->
+
+<section class="bug-fixes">
+
+### Bug Fixes
+
+-   [`71306ad`](https://github.com/stdlib-js/stdlib/commit/71306ad6afb49f88f725462c0604b8c7bc91a6a9) - remove unused `is-nan` dependency from `degenerate/mean` benchmark task
+
+</section>
+
+<!-- /.bug-fixes -->
 
 <section class="issues">
 
@@ -34,6 +44,7 @@ This release closes the following issue:
 
 <details>
 
+-   [`71306ad`](https://github.com/stdlib-js/stdlib/commit/71306ad6afb49f88f725462c0604b8c7bc91a6a9) - **fix:** remove unused `is-nan` dependency from `degenerate/mean` benchmark task _(by Philipp Burckhardt)_
 -   [`776c7e4`](https://github.com/stdlib-js/stdlib/commit/776c7e4b2fb38b08d91da3b7a9a99e2cd83a372d) - **docs:** replace manual `for` loop in examples [(#7122)](https://github.com/stdlib-js/stdlib/pull/7122) _(by Harsh, Philipp Burckhardt)_
 -   [`a1e230f`](https://github.com/stdlib-js/stdlib/commit/a1e230f29297caa89880e9c194c615a0400fb7bc) - **chore:** clean up cppcheck-suppress comments _(by Karan Anand)_
 -   [`1fc3918`](https://github.com/stdlib-js/stdlib/commit/1fc3918810a556d2593f4ec8a0764dce88a519fc) - **bench:** refactor random number generation in `stats/base/dists/degenerate` [(#4862)](https://github.com/stdlib-js/stdlib/pull/4862) _(by Karan Anand)_
