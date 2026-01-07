@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-06-23)
+## Unreleased (2026-01-07)
 
 <section class="features">
 
@@ -44,8 +44,11 @@ This release closes the following issue:
 
 <details>
 
+-   [`75552e8`](https://github.com/stdlib-js/stdlib/commit/75552e80fb02f81854f91d7361586a661d6b377e) - **bench:** update random value generation [(#9589)](https://github.com/stdlib-js/stdlib/pull/9589) _(by Harsh Yadav)_
+-   [`fc438e0`](https://github.com/stdlib-js/stdlib/commit/fc438e0edbad0689d6923d6f3edb959b96597662) - **test:** use standardized assertion messages and fix lint errors _(by Philipp Burckhardt)_
+-   [`9c21fd2`](https://github.com/stdlib-js/stdlib/commit/9c21fd20ef8b8a6a88abb96d80ea6d8e4c5434eb) - **test:** use .strictEqual() instead of .equal() _(by Philipp Burckhardt)_
 -   [`71306ad`](https://github.com/stdlib-js/stdlib/commit/71306ad6afb49f88f725462c0604b8c7bc91a6a9) - **fix:** remove unused `is-nan` dependency from `degenerate/mean` benchmark task _(by Philipp Burckhardt)_
--   [`776c7e4`](https://github.com/stdlib-js/stdlib/commit/776c7e4b2fb38b08d91da3b7a9a99e2cd83a372d) - **docs:** replace manual `for` loop in examples [(#7122)](https://github.com/stdlib-js/stdlib/pull/7122) _(by Harsh, Philipp Burckhardt)_
+-   [`776c7e4`](https://github.com/stdlib-js/stdlib/commit/776c7e4b2fb38b08d91da3b7a9a99e2cd83a372d) - **docs:** replace manual `for` loop in examples [(#7122)](https://github.com/stdlib-js/stdlib/pull/7122) _(by Harsh Yadav, Philipp Burckhardt)_
 -   [`a1e230f`](https://github.com/stdlib-js/stdlib/commit/a1e230f29297caa89880e9c194c615a0400fb7bc) - **chore:** clean up cppcheck-suppress comments _(by Karan Anand)_
 -   [`1fc3918`](https://github.com/stdlib-js/stdlib/commit/1fc3918810a556d2593f4ec8a0764dce88a519fc) - **bench:** refactor random number generation in `stats/base/dists/degenerate` [(#4862)](https://github.com/stdlib-js/stdlib/pull/4862) _(by Karan Anand)_
 -   [`645652a`](https://github.com/stdlib-js/stdlib/commit/645652a48d327b846509cb6221074a3a0038563c) - **feat:** add c implementation of `stats/base/dists/degenerate/mean` [(#4533)](https://github.com/stdlib-js/stdlib/pull/4533) _(by Vinit Pandit, stdlib-bot, Philipp Burckhardt)_
@@ -62,7 +65,7 @@ This release closes the following issue:
 
 A total of 4 people contributed to this release. Thank you to the following contributors:
 
--   Harsh
+-   Harsh Yadav
 -   Karan Anand
 -   Philipp Burckhardt
 -   Vinit Pandit
