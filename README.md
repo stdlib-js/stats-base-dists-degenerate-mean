@@ -69,7 +69,7 @@ where `μ` is the constant value of the distribution.
 ## Usage
 
 ```javascript
-import mean from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dists-degenerate-mean@deno/mod.js';
+import mean from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dists-degenerate-mean@v0.3.1-deno/mod.js';
 ```
 
 #### mean( mu )
@@ -107,7 +107,7 @@ v = mean( -0.5 );
 ```javascript
 import uniform from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-array-uniform@deno/mod.js';
 import logEachMap from 'https://cdn.jsdelivr.net/gh/stdlib-js/console-log-each-map@deno/mod.js';
-import mean from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dists-degenerate-mean@deno/mod.js';
+import mean from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dists-degenerate-mean@v0.3.1-deno/mod.js';
 
 var opts = {
     'dtype': 'float64'
