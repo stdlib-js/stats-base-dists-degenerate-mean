@@ -40,7 +40,7 @@
     "url": "https://github.com/stdlib-js/stdlib/issues"
   },
   "dependencies": {
-    "@stdlib/math-base-napi-unary": "^0.2.5",
+    "@stdlib/math-base-napi-unary": "^0.2.6",
     "@stdlib/utils-library-manifest": "^0.2.3"
   },
   "devDependencies": {
