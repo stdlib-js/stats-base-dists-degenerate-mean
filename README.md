@@ -48,7 +48,7 @@ The [expected value][expected-value] for a [degenerate][degenerate-distribution]
 ```
 
 <!-- <div class="equation" align="center" data-raw-text="\mathbb{E}\left[ X \right] = \mu" data-equation="eq:degenerate_expectation">
-    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@e1fbdee688c5409e4cc6b0cd06d90b1cd2abd67c/lib/node_modules/@stdlib/stats/base/dists/degenerate/mean/docs/img/equation_degenerate_expectation.svg" alt="Expected value for a degenerate distribution.">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@0b6a176fdab165a791a284bc2b08c69a95eb62f2/lib/node_modules/@stdlib/stats/base/dists/degenerate/mean/docs/img/equation_degenerate_expectation.svg" alt="Expected value for a degenerate distribution.">
     <br>
 </div> -->
 
@@ -62,14 +62,32 @@ where `μ` is the constant value of the distribution.
 
 <!-- Package usage documentation. -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/stats-base-dists-degenerate-mean
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
+-   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import mean from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dists-degenerate-mean@esm/index.mjs';
+var mean = require( '@stdlib/stats-base-dists-degenerate-mean' );
 ```
 
 #### mean( mu )
@@ -104,26 +122,17 @@ v = mean( -0.5 );
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="module">
-
-import uniform from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-array-uniform@esm/index.mjs';
-import logEachMap from 'https://cdn.jsdelivr.net/gh/stdlib-js/console-log-each-map@esm/index.mjs';
-import mean from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dists-degenerate-mean@esm/index.mjs';
+```javascript
+var uniform = require( '@stdlib/random-array-uniform' );
+var logEachMap = require( '@stdlib/console-log-each-map' );
+var mean = require( '@stdlib/stats-base-dists-degenerate-mean' );
 
 var opts = {
     'dtype': 'float64'
 };
 var mu = uniform( 10, 0.0, 1.0, opts );
 
-logEachMap( 'µ: %0.4f, E(X;µ): %0.4f', mu, mean );
-
-</script>
-</body>
-</html>
+logEachMap( 'μ: %0.4f, E(X;μ): %0.4f', mu, mean );
 ```
 
 </section>
@@ -132,7 +141,95 @@ logEachMap( 'µ: %0.4f, E(X;µ): %0.4f', mu, mean );
 
 <!-- C interface documentation. -->
 
+* * *
 
+<section class="c">
+
+## C APIs
+
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
+
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
+<!-- C usage documentation. -->
+
+<section class="usage">
+
+### Usage
+
+```c
+#include "stdlib/stats/base/dists/degenerate/mean.h"
+```
+
+#### stdlib_base_dists_degenerate_mean( mu )
+
+Returns the [expected value][expected-value] of a [degenerate][degenerate-distribution] distribution with constant value `mu`.
+
+```c
+double out = stdlib_base_dists_degenerate_mean( 0.1 );
+// returns 0.1
+```
+
+The function accepts the following arguments:
+
+-   **mu**: `[in] double` constant value of the distribution.
+
+```c
+double stdlib_base_dists_degenerate_mean( const double mu );
+```
+
+</section>
+
+<!-- /.usage -->
+
+<!-- C API usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<!-- C API usage examples. -->
+
+<section class="examples">
+
+### Examples
+
+```c
+#include "stdlib/stats/base/dists/degenerate/mean.h"
+#include <stdlib.h>
+#include <stdio.h>
+
+static double random_uniform( const double min, const double max ) {
+    double v = (double)rand() / ( (double)RAND_MAX + 1.0 );
+    return min + ( v*(max-min) );
+}
+
+int main( void ) {
+    double mu;
+    double v;
+    int i;
+
+    for ( i = 0; i < 25; i++ ) {
+        mu = random_uniform( 0.0, 1.0 );
+        v = stdlib_base_dists_degenerate_mean( mu );
+        printf( "μ: %lf, E(X;μ): %lf\n", mu, v );
+    }
+}
+```
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.c -->
 
 <!-- Section to include cited references. If references are included, add a horizontal rule *before* the section. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
@@ -159,7 +256,7 @@ logEachMap( 'µ: %0.4f, E(X;µ): %0.4f', mu, mean );
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
